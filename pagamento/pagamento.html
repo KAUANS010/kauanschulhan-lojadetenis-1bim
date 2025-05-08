@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pagamento - Loja de Tênis</title>
+  <link rel="stylesheet" href="./pagamento.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h2>Pagamento</h2>
+  </header>
+  <main>
+    <section id="resumoPagamento"></section>
+
+    <label for="formaPagamento">Forma de pagamento:</label><br />
+    <select id="formaPagamento" onchange="verificarPagamento()">
+      <option disabled selected>Escolha sua forma de pagamento</option>
+      <option>Pix</option>
+      <option>Cartão de Crédito</option>
+      <option>Dinheiro</option>
+    </select>
+
+    <div>
+      <button class="botao" onclick="finalizarCompra()">Finalizar</button>
+      <button class="botao" onclick="location.href='../carrinho/carrinho.html'">Voltar</button>
+    </div>
+
+    <section id="qrcode-area" class="qrcode-area" style="display: none;">
+      <h2>Escaneie o QR Code para pagar com PIX</h2>
+      <div id="qrcode"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Loja de Tênis</p>
+  </footer>
+
+  <div class="barra-acesso">
+    <a href="../loja/loja.html" title="Loja">👟</a>
+    <a href="../carrinho/carrinho.html" title="Carrinho">🛒</a>
+    <a href="../pagamento/pagamento.html" title="Pagamento">💸</a>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="./pagamento.js"></script>
+</body>
+</html>

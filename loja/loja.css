@@ -1,0 +1,194 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1a2980);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #fff;
+}
+
+h2 {
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Layout principal */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Cartão do produto */
+.card {
+  background-color: #a5a5a5;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra mais leve */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  max-height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+/* Informações do produto */
+.features {
+  margin: 12px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.price {
+  font-weight: bold;
+  color: #2980b9;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Botões */
+.add-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #2980b9;
+}
+
+/* Seletores de opções */
+.opcoes {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.opcoes label {
+  color: #111;
+  font-weight: bold;
+}
+
+.opcoes select,
+.opcoes input {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Botão voltar */
+.botao-voltar {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1c5980;
+  color: white;
+  padding: 10px 14px;
+  font-size: 13px;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  z-index: 999;
+}
+
+.botao-voltar:hover {
+  background-color: #163f5c;
+}
+
+/* Barra de acesso rápido */
+.barra-acesso {
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 999;
+}
+
+.barra-acesso a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 12px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.barra-acesso a:hover {
+  background-color: #13206d;
+}
+
+/* Animação de fundo */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Responsividade adicional */
+@media (max-width: 500px) {
+  .price {
+    font-size: 16px;
+  }
+
+  .add-button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+
+.tamanho-select {
+  background-color: #c0c0c2;
+}
+
+.cor-select {
+  background-color: #c0c0c2;
+}
+
+.quantidade-input {
+  background-color: #c0c0c2;
+}
+
