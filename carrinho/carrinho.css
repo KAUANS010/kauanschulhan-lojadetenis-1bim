@@ -1,154 +1,153 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1a2980);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
-  color: #fff;
+  font-family: Arial, sans-serif; /* Define a fonte principal da página */
+  margin: 0; /* Remove a margem padrão do navegador */
+  padding: 0; /* Remove o preenchimento padrão */
+  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1a2980); /* Fundo com gradiente colorido em ângulo */
+  background-size: 400% 400%; /* Aumenta o tamanho do fundo para animação suave */
+  animation: gradientBG 15s ease infinite; /* Animação do fundo com duração de 15s, repetição infinita */
+  color: #fff; /* Cor do texto padrão: branco */
 }
 
 h1,
 h2 {
-  font-family: "Tagesschrift", system-ui;
-  font-weight: 400;
-  color: #ffffff;
-  text-align: center;
-  margin-top: 20px;
+  font-family: "Tagesschrift", system-ui; /* Fonte personalizada para títulos */
+  font-weight: 400; /* Peso da fonte: normal */
+  color: #ffffff; /* Cor do texto: branco */
+  text-align: center; /* Centraliza o texto */
+  margin-top: 20px; /* Espaço acima dos títulos */
 }
 
 main {
-  padding: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-  box-sizing: border-box;
-
+  padding: 40px; /* Espaçamento interno */
+  max-width: 1200px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza o conteúdo na página */
+  box-sizing: border-box; /* Inclui padding e bordas no cálculo do tamanho */
 }
 
 #carrinho {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  box-sizing: border-box;
+  display: flex; /* Usa layout flexível */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  gap: 30px; /* Espaço entre os itens */
+  box-sizing: border-box; /* Inclui padding/borda no tamanho */
 }
 
 .coluna {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  display: flex; /* Layout flexível */
+  flex-direction: column; /* Alinha itens na vertical */
+  gap: 30px; /* Espaço entre os itens */
 }
 
 .card {
-  width: 260px;
-  height: auto;
-  background-color: #a5a5a5;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: 260px; /* Largura fixa */
+  height: auto; /* Altura automática */
+  background-color: #a5a5a5; /* Cor de fundo cinza claro */
+  border-radius: 12px; /* Cantos arredondados */
+  padding: 20px; /* Espaço interno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  text-align: center; /* Texto centralizado */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animações suaves ao passar o mouse */
+  display: flex; /* Flexível */
+  flex-direction: column; /* Alinha itens na vertical */
+  justify-content: space-between; /* Espaço entre os elementos internos */
 }
 
 .card:hover {
-  transform: scale(1.02);
+  transform: scale(1.02); /* Aumenta levemente o tamanho ao passar o mouse */
 }
 
 .card img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
+  width: 100%; /* Largura total do contêiner */
+  height: auto; /* Altura proporcional */
+  object-fit: contain; /* Mantém proporção da imagem */
+  border-radius: 8px; /* Cantos arredondados na imagem */
+  transition: transform 0.3s ease; /* Suaviza a animação ao passar o mouse */
 }
 
 .card:hover img {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Aumenta levemente a imagem ao passar o mouse */
 }
 
 button {
-  background-color: #3498db;
-  color: white;
-  border: none;
-  padding: 10px 16px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  background-color: #3498db; /* Cor azul do botão */
+  color: white; /* Texto branco */
+  border: none; /* Sem borda */
+  padding: 10px 16px; /* Espaço interno */
+  border-radius: 6px; /* Cantos arredondados */
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+  font-weight: bold; /* Texto em negrito */
+  transition: background-color 0.3s ease; /* Animação suave na cor de fundo */
 }
 
 button:hover {
-  background-color: #2980b9;
+  background-color: #2980b9; /* Azul mais escuro ao passar o mouse */
 }
 
 input,
 select {
-  padding: 6px 10px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: #c0c0c2;
-  margin: 6px 0;
+  padding: 6px 10px; /* Espaçamento interno */
+  border-radius: 4px; /* Cantos arredondados */
+  border: 1px solid #ccc; /* Borda cinza clara */
+  width: 100%; /* Ocupa toda a largura disponível */
+  box-sizing: border-box; /* Inclui padding/borda no tamanho */
+  background-color: #c0c0c2; /* Fundo cinza claro */
+  margin: 6px 0; /* Espaço acima e abaixo */
 }
 
 /* Barra de acesso rápido */
 .barra-acesso {
-  position: fixed;
-  right: 20px;
-  bottom: 80px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  z-index: 999;
+  position: fixed; /* Fixa na tela, mesmo rolando */
+  right: 20px; /* Distância da direita */
+  bottom: 80px; /* Distância do rodapé */
+  display: flex; /* Layout flexível */
+  flex-direction: column; /* Alinha os botões em coluna */
+  gap: 10px; /* Espaço entre os botões */
+  z-index: 999; /* Garante que fique acima de outros elementos */
 }
 
 .barra-acesso a {
-  color: white;
-  text-decoration: none;
-  font-size: 22px;
-  padding: 12px;
-  border-radius: 50%;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
+  color: white; /* Texto branco */
+  text-decoration: none; /* Remove sublinhado */
+  font-size: 22px; /* Tamanho da fonte */
+  padding: 12px; /* Espaço interno */
+  border-radius: 50%; /* Deixa o botão redondo */
+  text-align: center; /* Centraliza o texto */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Sombra leve */
+  transition: background-color 0.3s ease; /* Animação suave na cor de fundo */
 }
 
 .barra-acesso a:hover {
-  background-color: #13206d;
+  background-color: #13206d; /* Fundo azul escuro ao passar o mouse */
 }
 
 /* Animação de fundo */
 @keyframes gradientBG {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 50%; /* Início do gradiente à esquerda */
   }
 
   50% {
-    background-position: 100% 50%;
+    background-position: 100% 50%; /* Meio da animação: gradiente vai para a direita */
   }
 
   100% {
-    background-position: 0% 50%;
+    background-position: 0% 50%; /* Final da animação: volta ao início */
   }
 }
 
 #botao-pagamento {
-  display: block;
-  margin: 40px auto 0 auto; /* centraliza horizontalmente e dá margem superior */
-  background-color: #3498db;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  display: block; /* Mostra como bloco (ocupa linha inteira) */
+  margin: 40px auto 0 auto; /* Centraliza horizontalmente e adiciona espaço em cima */
+  background-color: #3498db; /* Cor azul */
+  color: white; /* Texto branco */
+  border: none; /* Sem borda */
+  padding: 12px 20px; /* Espaçamento interno */
+  border-radius: 8px; /* Cantos arredondados */
+  font-size: 16px; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+  cursor: pointer; /* Cursor de mão */
+  transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
 }
 
 #botao-pagamento:hover {
-  background-color: #2980b9;
+  background-color: #2980b9; /* Cor mais escura ao passar o mouse */
 }

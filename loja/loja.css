@@ -1,132 +1,132 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1a2980);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
-  color: #fff;
+  font-family: Arial, sans-serif; /* Define a fonte padrão */
+  margin: 0; /* Remove margem padrão do navegador */
+  padding: 0; /* Remove espaçamento interno padrão */
+  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1a2980); /* Fundo com gradiente em diagonal */
+  background-size: 400% 400%; /* Aumenta a área do gradiente para animação suave */
+  animation: gradientBG 15s ease infinite; /* Aplica animação no fundo */
+  color: #fff; /* Cor do texto padrão: branco */
 }
 
 h2 {
-  font-family: "Tagesschrift", system-ui;
-  font-weight: 400;
-  color: #ffffff;
-  margin-top: 20px;
-  text-align: center;
+  font-family: "Tagesschrift", system-ui; /* Fonte personalizada para títulos */
+  font-weight: 400; /* Peso da fonte (leve) */
+  color: #ffffff; /* Cor branca para o título */
+  margin-top: 20px; /* Espaço acima do título */
+  text-align: center; /* Centraliza o texto */
 }
 
-/* Layout principal */
+/* Layout principal dos produtos */
 .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  padding: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-  box-sizing: border-box;
+  display: grid; /* Usa grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Responsivo: cria colunas flexíveis */
+  gap: 30px; /* Espaço entre os cards */
+  padding: 40px; /* Espaço interno ao redor */
+  max-width: 1200px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  box-sizing: border-box; /* Inclui padding na largura total */
 }
 
-/* Cartão do produto */
+/* Estilo do cartão do produto */
 .card {
-  background-color: #a5a5a5;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra mais leve */
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #a5a5a5; /* Cor de fundo do card */
+  border-radius: 12px; /* Cantos arredondados */
+  padding: 20px; /* Espaço interno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  text-align: center; /* Texto centralizado */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação ao passar o mouse */
 }
 
 .card:hover {
-  transform: scale(1.02);
+  transform: scale(1.02); /* Aumenta levemente o tamanho ao passar o mouse */
 }
 
 .card img {
-  width: 100%;
-  height: auto;
-  max-height: auto;
-  object-fit: contain;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
+  width: 100%; /* Imagem ocupa toda a largura do card */
+  height: auto; /* Altura ajustada automaticamente */
+  max-height: auto; /* (Nota: 'auto' aqui é redundante) */
+  object-fit: contain; /* Imagem se ajusta ao espaço sem cortar */
+  border-radius: 8px; /* Cantos arredondados da imagem */
+  transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
 }
 
 .card:hover img {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Zoom leve na imagem ao passar o mouse */
 }
 
-/* Informações do produto */
+/* Informações adicionais do produto */
 .features {
-  margin: 12px 0;
-  color: #333;
-  font-size: 14px;
+  margin: 12px 0; /* Espaço vertical */
+  color: #333; /* Cor do texto mais escura */
+  font-size: 14px; /* Tamanho da fonte menor */
 }
 
 .price {
-  font-weight: bold;
-  color: #2980b9;
-  margin-bottom: 10px;
-  font-size: 18px;
+  font-weight: bold; /* Texto em negrito */
+  color: #2980b9; /* Azul forte */
+  margin-bottom: 10px; /* Espaço abaixo */
+  font-size: 18px; /* Tamanho da fonte maior */
 }
 
-/* Botões */
+/* Botões para adicionar ao carrinho */
 .add-button {
-  background-color: #3498db;
-  color: white;
-  border: none;
-  padding: 10px 16px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  background-color: #3498db; /* Azul claro */
+  color: white; /* Texto branco */
+  border: none; /* Sem borda */
+  padding: 10px 16px; /* Espaço interno */
+  border-radius: 6px; /* Cantos arredondados */
+  cursor: pointer; /* Cursor de mão */
+  font-weight: bold; /* Texto em negrito */
+  transition: background-color 0.3s ease; /* Animação ao passar o mouse */
 }
 
 .add-button:hover {
-  background-color: #2980b9;
+  background-color: #2980b9; /* Cor mais escura no hover */
 }
 
-/* Seletores de opções */
+/* Seções de opções de produto */
 .opcoes {
-  margin: 10px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  font-size: 14px;
+  margin: 10px 0; /* Espaçamento vertical */
+  display: flex; /* Flex layout */
+  flex-direction: column; /* Coloca itens em coluna */
+  gap: 6px; /* Espaço entre os elementos */
+  font-size: 14px; /* Tamanho da fonte */
 }
 
 .opcoes label {
-  color: #111;
-  font-weight: bold;
+  color: #111; /* Texto quase preto */
+  font-weight: bold; /* Negrito */
 }
 
 .opcoes select,
 .opcoes input {
-  padding: 6px 10px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+  padding: 6px 10px; /* Espaço interno */
+  border-radius: 4px; /* Cantos arredondados */
+  border: 1px solid #ccc; /* Borda cinza clara */
 }
 
-/* Botão voltar */
+/* Botão de voltar */
 .botao-voltar {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #1c5980;
-  color: white;
-  padding: 10px 14px;
-  font-size: 13px;
-  border: none;
-  border-radius: 50px;
-  text-decoration: none;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
-  z-index: 999;
+  position: fixed; /* Fixa o botão na tela */
+  bottom: 20px; /* Distância da parte inferior */
+  right: 20px; /* Distância da lateral direita */
+  background-color: #1c5980; /* Cor de fundo azul escuro */
+  color: white; /* Texto branco */
+  padding: 10px 14px; /* Espaço interno */
+  font-size: 13px; /* Tamanho pequeno */
+  border: none; /* Sem borda */
+  border-radius: 50px; /* Borda arredondada como pílula */
+  text-decoration: none; /* Remove sublinhado */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+  transition: background-color 0.3s ease; /* Animação no hover */
+  z-index: 999; /* Fica acima de outros elementos */
 }
 
 .botao-voltar:hover {
-  background-color: #163f5c;
+  background-color: #163f5c; /* Cor mais escura no hover */
 }
 
-/* Barra de acesso rápido */
+/* Barra de acesso rápido com ícones */
 .barra-acesso {
   position: fixed;
   right: 20px;
@@ -138,21 +138,21 @@ h2 {
 }
 
 .barra-acesso a {
-  color: white;
-  text-decoration: none;
-  font-size: 22px;
-  padding: 12px;
-  border-radius: 50%;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  color: white; /* Texto branco */
+  text-decoration: none; /* Sem sublinhado */
+  font-size: 22px; /* Ícones grandes */
+  padding: 12px; /* Espaço interno */
+  border-radius: 50%; /* Formato circular */
+  text-align: center; /* Centraliza o conteúdo */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Sombra */
   transition: background-color 0.3s ease;
 }
 
 .barra-acesso a:hover {
-  background-color: #13206d;
+  background-color: #13206d; /* Azul escuro no hover */
 }
 
-/* Animação de fundo */
+/* Animação do fundo gradiente */
 @keyframes gradientBG {
   0% {
     background-position: 0% 50%;
@@ -167,28 +167,4 @@ h2 {
   }
 }
 
-/* Responsividade adicional */
-@media (max-width: 500px) {
-  .price {
-    font-size: 16px;
-  }
-
-  .add-button {
-    padding: 8px 12px;
-    font-size: 14px;
-  }
-}
-
-
-.tamanho-select {
-  background-color: #c0c0c2;
-}
-
-.cor-select {
-  background-color: #c0c0c2;
-}
-
-.quantidade-input {
-  background-color: #c0c0c2;
-}
-
+/* Responsividade para telas pequ*
